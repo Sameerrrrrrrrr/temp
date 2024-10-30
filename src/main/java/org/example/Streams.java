@@ -14,8 +14,9 @@ public class Streams {
          Stream<Employee> stream= Stream.of(arrayOfEmps);
 //         stream.forEach((emp)->System.out.println(emp.getName()));
 //         List<Employee> emp=stream.filter(e->e.getName().startsWith("Ma") || e.getName().startsWith("Bill")).collect(Collectors.toList());
-        Employee emp=stream.filter(e->e.getName().contains("B")).findFirst().orElse(null);
-         System.out.println(emp.getName());
+//        Employee emp=stream.filter(e->e.getName().contains("B")).findFirst().orElse(null);
+        stream.peek(e->System.out.println(e.getSalary())).collect(Collectors.toList());
+//         System.out.println(emp.getName());
 
 
     }

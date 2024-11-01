@@ -17,6 +17,7 @@ public class Streams {
                  new Employee(3, "Mark Zuckerberg", 300000.0),
                  new Employee(4,"Steve Jobs",400000.0)
         };
+         System.out.println("abc");
          Stream<Employee> stream= Stream.of(arrayOfEmps);
 //         stream.forEach((emp)->System.out.println(emp.getName()));
 //         List<Employee> emp=stream.filter(e->e.getName().startsWith("Ma") || e.getName().startsWith("Bill")).collect(Collectors.toList());
